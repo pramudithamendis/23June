@@ -3,8 +3,9 @@ package designpatterns;
 public class MissileController {
 
 	private static MissileController instance;
-	LaunchMissile lm;
-	BlastMissile bm;
+	
+	MissileSystem ms;
+	
 	
 	public MissileController getInstance() {
 		if(instance == null) {
@@ -14,11 +15,16 @@ public class MissileController {
 		
 	}
 	
+	void setMS(MissileSystem ms) {
+		this.ms = ms;
+	}
+	
 	void performLaunching(String start){
-		this.lm.initiateOperation(start);
+		ms.launch(start);
+		
 	}
 	
 	void performBlasting(String end){
-		this.lm.initiateOperation(end);
+		ms.blast(end);
 	}
 }
