@@ -7,9 +7,10 @@ public class MissileController {
 	MissileSystem ms;
 	
 	
-	public MissileController getInstance() {
+	public static MissileController getInstance() {
 		if(instance == null) {
 			instance = new MissileController();
+			System.out.println("Initialize Heat missile System. . .");
 		}
 		return instance;
 		
