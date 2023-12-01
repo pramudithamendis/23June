@@ -24,7 +24,7 @@ public class Main {
 			//if the first ever user input is not 0, add it to the array list
 			numbers.add(no);
 			System.out.println("enter a number");
-			 
+			 //sout
 			//getting the next user input
 			no = s.nextInt();
 		}
