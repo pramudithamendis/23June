@@ -17,7 +17,7 @@ public class HeatMissileSystem implements MissileSystem {
 		return instance;
 	}
 
-	void setMO(MissileOperation mo) {
+	public void setMO(MissileOperation mo) {
 		this.mo = mo;
 	}
 	@Override

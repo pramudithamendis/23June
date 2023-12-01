@@ -4,13 +4,18 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		MissileSystem hms = new HeatMissileSystem();
-//		MissileSystem rms = new RocketMissileSystem();
 		
+		MissileOperation lm = new LaunchMissile();	
 		MissileSystem hms = HeatMissileSystem.getInstance();
-		MissileSystem rms = RocketMissileSystem.getInstance();
 		MissileController mc = MissileController.getInstance();
 		
+		
+		hms.setMO(lm);
+		mc.setMS(hms);
+
+		
+		mc.performLaunching("Colombo");
+		mc.performBlasting("Col2");
 		
 //		System.out.println("Hi");
 		
