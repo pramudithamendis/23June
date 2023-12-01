@@ -3,8 +3,9 @@ package designpatterns;
 public class RocketMissileSystem implements MissileSystem {
 	
 	private static RocketMissileSystem instance;
-	private String source;
-	private String destination;
+
+	MissileOperation mo;
+	
 	
 	public static RocketMissileSystem getInstance() {
 		
@@ -14,19 +15,23 @@ public class RocketMissileSystem implements MissileSystem {
 		}
 		return instance;
 	}
+	
+	void setMO(MissileOperation mo) {
+		this.mo = mo;
+	}
 	@Override
 	public void launch(String source) {
 		// TODO Auto-generated method stub
-		this.source = source;
+		mo.initiateOperation(source);
 		System.out.println("RMS from " + source);
 	}
 
 	@Override
 	public void blast(String destination) {
 		// TODO Auto-generated method stub
-		this.destination = destination;
-		System.out.println("RMS to " + destination);
+		mo.initiateOperation(destination);
 		
+		System.out.println("RMS to " + destination);
 	}
 
 }

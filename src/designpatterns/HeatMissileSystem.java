@@ -3,8 +3,10 @@ package designpatterns;
 public class HeatMissileSystem implements MissileSystem {
 	
 	private static HeatMissileSystem instance;
-	private String source;
-	private String destination;
+
+	
+	MissileOperation mo;
+	
 	
 	public static HeatMissileSystem getInstance() {
 		
@@ -15,18 +17,22 @@ public class HeatMissileSystem implements MissileSystem {
 		return instance;
 	}
 
+	void setMO(MissileOperation mo) {
+		this.mo = mo;
+	}
 	@Override
 	public void launch(String source) {
 		// TODO Auto-generated method stub
-		this.source = source;
+		mo.initiateOperation(source);
 		System.out.println("HMS from " + source);
 	}
 
 	@Override
 	public void blast(String destination) {
 		// TODO Auto-generated method stub
-		this.destination = destination;
-		System.out.println("HMS to " + source);
+		mo.initiateOperation(destination);
+		
+		System.out.println("HMS to " + destination);
 	}
 
 }

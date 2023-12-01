@@ -13,6 +13,7 @@ public class MissileController {
 		return instance;
 		
 	}
+	
 	void performLaunching(String start){
 		this.lm.initiateOperation(start);
 	}
