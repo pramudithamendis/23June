@@ -8,9 +8,13 @@ public class Test {
 	
 	public static void main(String args[]) {
 		
+	DaemonThread dt = new DaemonThread();
+	dt.setDaemon(true);
 	
 	Thread evenThread = new Thread(new EvenRunnable(lock, nextNum, MAX_NUM), "EvenThread");
 	evenThread.start();
+
+	dt.start();
 	//changed
 
 
