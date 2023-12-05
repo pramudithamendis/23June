@@ -3,9 +3,9 @@ package threads;
 public class DaemonThread extends Thread {
 
 	public void run() {
-		for(int i=0; i<10; i++) {
+		for(int i=0; i<5000; i++) {
 //		while(true) {
-			System.out.println("Hi "+ i);
+			System.out.println("Hi at Daemon "+ i);
 		}
 		
 	}

@@ -11,18 +11,14 @@ public class Test {
 	DaemonThread dt = new DaemonThread();
 	dt.setDaemon(true);
 	
-	Thread evenThread = new Thread(new EvenRunnable(lock, nextNum, MAX_NUM), "EvenThread");
-	evenThread.start();
+//	Thread evenThread = new Thread(new EvenRunnable(lock, nextNum, MAX_NUM), "EvenThread");
+//	evenThread.start();
 
 	dt.start();
-	//changed
+	for(int i=0; i<1000; i++) {
 
-
-//	Thread oddThread = new Thread(new OddRunnable(), "OddThread");
-//	
-//
-//	Thread oddThread2 = new Thread(new OddRunnable(), "OddThread");
-//	oddThread2.start();
+			System.out.println("Hi at main"+ i);
+		}
 
 	 
 	}
