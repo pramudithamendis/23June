@@ -11,6 +11,7 @@ public class Test {
 	DaemonThread dt = new DaemonThread();
 	dt.setDaemon(true);
 	
+// 		Don't remove the below 2 comments cuz they are essential for the original question's work. We commented it cuz to make the Daemon threads work
 //	Thread evenThread = new Thread(new EvenRunnable(lock, nextNum, MAX_NUM), "EvenThread");
 //	evenThread.start();
 
