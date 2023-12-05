@@ -1,6 +1,6 @@
 package threads;
 
-public class EvenOddPrinter {
+public class Test {
 
 	private static final int MAX_NUM = 20;
 	private static volatile int nextNum = 0;
