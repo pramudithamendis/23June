@@ -1,5 +1,7 @@
 package pair;
 
+import java.util.*;
+
 public class Pair<T,U, W extends Number ,X,A> {
 	
 	T t;
@@ -8,12 +10,19 @@ public class Pair<T,U, W extends Number ,X,A> {
 	X x;
 	A a;
 	
+	
+	//K = We can't do the following
+//	List<T, U, W> list = new ArrayList<>();
+	
+	
+	
 	public Pair(T t, U u, W w, X x, A a){
 		this.t = t;
 		this.u = u;
 		this.w = w;
 		this.x = x;
 		this.a = a;
+		list.add(t,u,w);
 	}
 	public T getFirst() {
 		 
@@ -43,6 +52,8 @@ public class Pair<T,U, W extends Number ,X,A> {
 		System.out.println(t +" "+ u);
 	
 	}
+	
+	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
