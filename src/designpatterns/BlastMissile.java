@@ -7,6 +7,8 @@ public class BlastMissile implements MissileOperation {
 	public void initiateOperation(String location) {
 		// TODO Auto-generated method stub
 		this.location = location;
+		System.out.println("At Blast: "+ location);
+		
 		
 	}
 

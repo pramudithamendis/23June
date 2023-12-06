@@ -22,10 +22,12 @@ public class MissileController {
 	
 	void performLaunching(String start){
 		ms.launch(start);
+		System.out.println("At MC-Launch");
 		
 	}
 	
 	void performBlasting(String end){
 		ms.blast(end);
+		System.out.println("At MC-Blast");
 	}
 }

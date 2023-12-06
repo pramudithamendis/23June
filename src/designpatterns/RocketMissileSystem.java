@@ -23,7 +23,7 @@ public class RocketMissileSystem implements MissileSystem {
 	public void launch(String source) {
 		// TODO Auto-generated method stub
 		mo.initiateOperation(source);
-		System.out.println("RMS from " + source);
+		System.out.println("At RMS-Launch");
 	}
 
 	@Override
@@ -31,7 +31,7 @@ public class RocketMissileSystem implements MissileSystem {
 		// TODO Auto-generated method stub
 		mo.initiateOperation(destination);
 		
-		System.out.println("RMS to " + destination);
+		System.out.println("At RMS-Blast");
 	}
 
 }

@@ -20,11 +20,12 @@ public class HeatMissileSystem implements MissileSystem {
 	public void setMO(MissileOperation mo) {
 		this.mo = mo;
 	}
+	
 	@Override
 	public void launch(String source) {
 		// TODO Auto-generated method stub
 		mo.initiateOperation(source);
-		System.out.println("HMS from " + source);
+		System.out.println("At HMS-Launch");
 	}
 
 	@Override
@@ -32,7 +33,7 @@ public class HeatMissileSystem implements MissileSystem {
 		// TODO Auto-generated method stub
 		mo.initiateOperation(destination);
 		
-		System.out.println("HMS to " + destination);
+		System.out.println("At HMS-Blast");
 	}
 
 }
