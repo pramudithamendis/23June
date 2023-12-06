@@ -15,6 +15,7 @@ public class Test {
 //	Thread evenThread = new Thread(new EvenRunnable(lock, nextNum, MAX_NUM), "EvenThread");
 //	evenThread.start();
 
+	//
 	dt.start();
 	for(int i=0; i<1000; i++) {
 
