@@ -26,6 +26,7 @@ public class Pair<T,U> {
 	public <T,U> void printFirst(T t, U u) {
 		
 		System.out.println("First stuff");
+		
 	}
 	
 	public static void main(String[] args) {
