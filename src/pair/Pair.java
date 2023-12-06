@@ -22,7 +22,7 @@ public class Pair<T,U, W extends Number ,X,A> {
 		this.w = w;
 		this.x = x;
 		this.a = a;
-		list.add(t,u,w);
+
 	}
 	public T getFirst() {
 		 
