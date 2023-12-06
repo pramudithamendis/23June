@@ -22,6 +22,12 @@ public class Pair<T,U> {
 		
 	}
 	
+	
+	public <T,U> void printFirst(T t, U u) {
+		
+		System.out.println("First stuff");
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -44,6 +50,7 @@ public class Pair<T,U> {
 		System.out.println("Second value: "+ p2.getSecond());
 		
 		
+		p.printFirst("Hi", 12);
 		
 		
 	}
